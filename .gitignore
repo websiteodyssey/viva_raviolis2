@@ -1,0 +1,9 @@
+# Sources lourdes (les versions web optimisées sont dans assets/)
+image_videos/
+
+# OS / éditeurs
+.DS_Store
+Thumbs.db
+*.log
+.vscode/
+.idea/

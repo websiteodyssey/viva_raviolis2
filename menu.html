@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>La Carte — Viva Raviolis · Paris 9e</title>
+<meta name="description" content="La carte complète de Viva Raviolis : raviolis, nouilles, soupes, woks Mala, plats du Sichuan, hot pots, desserts et boissons." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header scrolled" id="header">
+  <a href="index.html" class="brand">
+    <span class="name">VIVA RAVIOLIS</span>
+    <span class="tagline" data-i18n="brand.tagline">Raviolis &amp; Nouilles · Paris 9ᵉ</span>
+  </a>
+  <nav class="nav" id="nav">
+    <a class="link" href="index.html#maison" data-i18n="nav.maison">Maison</a>
+    <a class="link" href="menu.html" data-i18n="nav.carte">La Carte</a>
+    <a class="link" href="index.html#salon" data-i18n="nav.salon">Le Salon</a>
+    <a class="link" href="index.html#visiter" data-i18n="nav.visiter">Visiter</a>
+    <a class="link" href="index.html#commander" data-i18n="nav.commander">Commander</a>
+  </nav>
+  <div class="nav-actions">
+    <div class="lang-select" id="langSelect">
+      <button class="lang-current" id="langCurrent" aria-haspopup="true" aria-expanded="false" aria-label="Choisir la langue">
+        <span class="lang-globe">⌖</span>
+        <span class="lang-current-label">FR</span>
+        <span class="lang-caret">▾</span>
+      </button>
+      <ul class="lang-menu" id="langMenu">
+        <li><button class="lang-btn" data-lang="fr">Français</button></li>
+        <li><button class="lang-btn" data-lang="en">English</button></li>
+        <li><button class="lang-btn" data-lang="zh">中文</button></li>
+        <li><button class="lang-btn" data-lang="it">Italiano</button></li>
+        <li><button class="lang-btn" data-lang="es">Español</button></li>
+      </ul>
+    </div>
+    <a href="https://reservation.ody.app/4357d5bd-f49d-494a-af7b-d53e37315086" target="_blank" rel="noopener" class="btn btn-gold btn-reserve" data-i18n="btn.reserver">Réserver</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ============ MENU HERO ============ -->
+<section class="menu-hero">
+  <img src="assets/img/banner.png" alt="Raviolis et nouilles Viva Raviolis" />
+  <div class="ov"></div>
+  <div class="inner">
+    <span class="eyebrow" data-i18n="menu.eyebrow">La Carte</span>
+    <h1 data-i18n="menu.title">Notre Carte</h1>
+    <p class="section-lead" style="margin:14px auto 0" data-i18n="menu.sub">Fait main, jour après jour. <span class="spicy">🌶️</span> = plat relevé du Sichuan.</p>
+  </div>
+</section>
+
+<!-- ============ MENU BODY ============ -->
+<section class="menu-body">
+  <div class="menu-toc-wrap" id="toc-wrap">
+    <div class="container">
+      <button class="toc-arrow toc-arrow--l" id="tocPrev" aria-label="Précédent">‹</button>
+      <nav class="menu-toc" id="toc"></nav>
+      <button class="toc-arrow toc-arrow--r" id="tocNext" aria-label="Suivant">›</button>
+    </div>
+  </div>
+  <div class="container">
+    <div id="menu-root"></div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="name">VIVA RAVIOLIS</div>
+        <p style="margin-top:14px" data-i18n="foot.desc">Raviolis &amp; nouilles faits main.<br />Cuisine chinoise &amp; du Sichuan.<br />Paris 9ᵉ.</p>
+      </div>
+      <div>
+        <h5 data-i18n="foot.h_salon">Le Salon</h5>
+        <p>57 rue du Faubourg Montmartre<br />75009 Paris</p>
+        <p><a href="https://www.google.com/maps?q=57+Rue+du+Faubourg+Montmartre,+75009+Paris" target="_blank" rel="noopener" data-i18n="foot.viewmap">Voir sur la carte ↗</a></p>
+      </div>
+      <div>
+        <h5 data-i18n="foot.h_hours">Horaires</h5>
+        <p data-i18n="foot.hours">Lun–Ven 11h–15h · 17h30–23h30<br />Sam–Dim 11h–23h30</p>
+        <p><a href="tel:0177195573">01 77 19 55 73</a></p>
+      </div>
+      <div>
+        <h5 data-i18n="foot.h_nav">Naviguer</h5>
+        <p><a href="index.html#maison" data-i18n="nav.maison">Maison</a><br /><a href="menu.html" data-i18n="nav.carte">La Carte</a><br /><a href="index.html#salon" data-i18n="nav.salon">Le Salon</a><br /><a href="index.html#visiter" data-i18n="nav.visiter">Visiter</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span data-i18n="foot.bottom1">© MMXXVI · Viva Raviolis — Tous droits réservés.</span>
+      <span class="foot-links">
+        <a href="mentions-legales.html" data-i18n="foot.legal">Mentions légales</a>
+        <a href="politique-confidentialite.html" data-i18n="foot.privacy">Politique de confidentialité</a>
+        <span class="foot-powered">Powered by <a href="https://pro.ody.app/" target="_blank" rel="noopener">ody</a></span>
+      </span>
+    </div>
+    <div class="foot-identity">
+      VIVA RAVIOLI — SAS au capital de 3 000 € · SIREN 938 036 977 · SIRET 938 036 977 00016 · RCS Paris · TVA FR02938036977 · 57 rue du Faubourg Montmartre, 75009 Paris
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/menu-data.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

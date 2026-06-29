@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Viva Raviolis — Raviolis & Nouilles faits main · Paris 9e</title>
+<meta name="description" content="Viva Raviolis, restaurant chinois à Paris 9e : raviolis et nouilles faits main, vermicelles en pot et cuisine du Sichuan. 57 rue du Faubourg Montmartre." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="header">
+  <a href="index.html" class="brand">
+    <span class="name">VIVA RAVIOLIS</span>
+    <span class="tagline" data-i18n="brand.tagline">Raviolis &amp; Nouilles · Paris 9ᵉ</span>
+  </a>
+  <nav class="nav" id="nav">
+    <a class="link" href="#maison" data-i18n="nav.maison">Maison</a>
+    <a class="link" href="menu.html" data-i18n="nav.carte">La Carte</a>
+    <a class="link" href="#salon" data-i18n="nav.salon">Le Salon</a>
+    <a class="link" href="#visiter" data-i18n="nav.visiter">Visiter</a>
+    <a class="link" href="#commander" data-i18n="nav.commander">Commander</a>
+  </nav>
+  <div class="nav-actions">
+    <div class="lang-select" id="langSelect">
+      <button class="lang-current" id="langCurrent" aria-haspopup="true" aria-expanded="false" aria-label="Choisir la langue">
+        <span class="lang-globe">⌖</span>
+        <span class="lang-current-label">FR</span>
+        <span class="lang-caret">▾</span>
+      </button>
+      <ul class="lang-menu" id="langMenu">
+        <li><button class="lang-btn" data-lang="fr">Français</button></li>
+        <li><button class="lang-btn" data-lang="en">English</button></li>
+        <li><button class="lang-btn" data-lang="zh">中文</button></li>
+        <li><button class="lang-btn" data-lang="it">Italiano</button></li>
+        <li><button class="lang-btn" data-lang="es">Español</button></li>
+      </ul>
+    </div>
+    <a href="https://reservation.ody.app/4357d5bd-f49d-494a-af7b-d53e37315086" target="_blank" rel="noopener" class="btn btn-gold btn-reserve" data-i18n="btn.reserver">Réserver</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <video class="hero__video" autoplay muted loop playsinline preload="auto" poster="assets/img/hero-poster.jpg">
+    <source src="assets/video/xiaolongbao_bg.mp4" type="video/mp4" />
+  </video>
+  <div class="hero__overlay"></div>
+  <div class="hero__grain"></div>
+  <div class="container hero__content">
+    <span class="hero-cn" data-i18n="hero.eyebrow">Maison de raviolis &amp; nouilles — Paris 9ᵉ</span>
+    <h1 data-i18n="hero.title"><span class="word">Le ravioli,</span><br /><span class="word">fait à la main.</span></h1>
+    <p class="lead" data-i18n="hero.lead">Raviolis pliés un à un, nouilles tirées chaque jour, vermicelles en pot mijotés et feu vif du Sichuan — une maison chinoise au cœur du 9e.</p>
+    <div class="cta-row">
+      <a href="menu.html" class="btn btn-gold" data-i18n="hero.cta1">Découvrir la carte</a>
+      <a href="https://reservation.ody.app/4357d5bd-f49d-494a-af7b-d53e37315086" target="_blank" rel="noopener" class="btn btn-ghost" data-i18n="hero.cta2">Réserver une table</a>
+    </div>
+  </div>
+  <div class="scroll-cue" data-i18n="hero.scroll">Découvrir</div>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track">
+    <span data-i18n="mq.1">Raviolis faits main</span><span class="dot">✦</span>
+    <span data-i18n="mq.2">Nouilles tirées du jour</span><span class="dot">✦</span>
+    <span data-i18n="mq.3">Vermicelles en pot · 砂锅粉</span><span class="dot">✦</span>
+    <span data-i18n="mq.4">Cuisine du Sichuan</span><span class="dot">✦</span>
+    <span>Xiao Long Bao</span><span class="dot">✦</span>
+    <span>Dan Dan Mian</span><span class="dot">✦</span>
+    <span data-i18n="mq.1">Raviolis faits main</span><span class="dot">✦</span>
+    <span data-i18n="mq.2">Nouilles tirées du jour</span><span class="dot">✦</span>
+    <span data-i18n="mq.3">Vermicelles en pot · 砂锅粉</span><span class="dot">✦</span>
+    <span data-i18n="mq.4">Cuisine du Sichuan</span><span class="dot">✦</span>
+    <span>Xiao Long Bao</span><span class="dot">✦</span>
+    <span>Dan Dan Mian</span><span class="dot">✦</span>
+  </div>
+</div>
+
+<!-- ============ LA MAISON ============ -->
+<section class="section maison" id="maison">
+  <span class="orb orb-wine" style="top:-80px;left:-120px;width:420px;height:420px"></span>
+  <span class="orb orb-gold" style="bottom:-60px;right:-100px;width:340px;height:340px;animation-delay:-6s"></span>
+  <span class="wm" style="top:6%;right:-2%">RAVIOLIS</span>
+  <div class="container">
+    <div class="grid">
+      <div class="copy reveal from-left">
+        <span class="eyebrow" data-i18n="maison.eyebrow">La Maison</span>
+        <h2 class="section-title" data-i18n="maison.title">Deux gestes,<br />une même table.</h2>
+        <p data-i18n="maison.p1">Chez Viva Raviolis, tout commence par les mains. Les raviolis — 猪肉饺子, 小笼包, 煎包 — sont façonnés et pliés sur place. Les nouilles sont étirées et taillées à la commande pour le 油泼面 nappé d'huile brûlante, le 担担面 et nos nouilles sautées.</p>
+        <p data-i18n="maison.p2">À midi, formules généreuses et bols de riz garnis. Le soir, la maison déploie ses casseroles de vermicelles (砂锅粉) et le grand répertoire de la cuisine du Sichuan — parfumée, vive, relevée.</p>
+        <p class="sign" data-i18n="maison.sign">— Une cuisine du geste, servie comme un salon.</p>
+        <div class="stats">
+          <div class="stat"><div class="num"><span data-count="100">0</span>%</div><div class="lbl" data-i18n="maison.stat1">Fait main</div></div>
+          <div class="stat"><div class="num"><span data-count="30">0</span>+</div><div class="lbl" data-i18n="maison.stat2">Plats à la carte</div></div>
+          <div class="stat"><div class="num">9ᵉ</div><div class="lbl" data-i18n="maison.stat3">Paris</div></div>
+        </div>
+      </div>
+      <div class="figure reveal from-right">
+        <img src="assets/img/banner.png" alt="Raviolis vapeur et nouilles faites main" data-parallax="20" />
+        <span class="frame"></span>
+        <span class="figure-badge" data-i18n="maison.badge">Fait<br>main</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SIGNATURES ============ -->
+<section class="section signatures" id="signatures">
+  <span class="orb orb-gold" style="top:10%;left:-90px;width:300px;height:300px"></span>
+  <span class="wm" style="top:2%;left:50%;transform:translateX(-50%)">SIGNATURES</span>
+  <div class="container">
+    <div class="sig-head reveal from-scale">
+      <span class="eyebrow" data-i18n="sig.eyebrow">Les Signatures</span>
+      <h2 class="section-title" data-i18n="sig.title">Nos incontournables</h2>
+    </div>
+    <div class="sig-grid">
+      <article class="dish reveal from-scale" data-delay="0">
+        <div class="ph"><span class="steam"></span><span class="steam s2"></span><span class="steam s3"></span><img src="assets/img/plat1.jpg" alt="Nouilles larges à l'huile pimentée" /></div>
+        <div class="body">
+          <span class="cat" data-i18n="sig.d1cat">Nouilles · 面条</span>
+          <h3 data-i18n="sig.d1name">Nouilles à l'huile brûlante</h3>
+          <div class="cn">油泼面</div>
+          <p class="desc" data-i18n="sig.d1desc">Larges nouilles tirées main, huile de piment versée bouillante, ail et ciboule.</p>
+          <div class="price">9,80 €</div>
+        </div>
+      </article>
+      <article class="dish reveal from-scale" data-delay="120">
+        <div class="ph"><span class="steam"></span><span class="steam s2"></span><span class="steam s3"></span><img src="assets/img/plat2.jpg" alt="Nouilles au bœuf braisé et bok choy" /></div>
+        <div class="body">
+          <span class="cat" data-i18n="sig.d2cat">Nouilles · 牛肉</span>
+          <h3 data-i18n="sig.d2name">Nouilles au bœuf braisé</h3>
+          <div class="cn">香辣牛肉汤面</div>
+          <p class="desc" data-i18n="sig.d2desc">Bœuf longuement braisé, bok choy, bouillon parfumé et nouilles fraîches.</p>
+          <div class="price">11,90 €</div>
+        </div>
+      </article>
+      <article class="dish reveal from-scale" data-delay="240">
+        <div class="ph"><span class="steam"></span><span class="steam s2"></span><span class="steam s3"></span><img src="assets/img/plat3.jpg" alt="Nouilles tomate et œuf" /></div>
+        <div class="body">
+          <span class="cat" data-i18n="sig.d3cat">Maison · 番茄</span>
+          <h3 data-i18n="sig.d3name">Nouilles tomate &amp; œuf</h3>
+          <div class="cn">西红柿鸡蛋面</div>
+          <p class="desc" data-i18n="sig.d3desc">Le réconfort par excellence : tomates fondantes, œuf nuage, nouilles soyeuses.</p>
+          <div class="price">10,90 €</div>
+        </div>
+      </article>
+    </div>
+    <div class="sig-cta reveal" style="text-align:center">
+      <a href="menu.html" class="btn btn-gold" data-i18n="sig.cta">Voir la carte complète</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LE SALON ============ -->
+<section class="section salon" id="salon">
+  <span class="orb orb-wine" style="top:20%;right:-120px;width:380px;height:380px"></span>
+  <span class="wm" style="bottom:4%;left:-2%">LE SALON</span>
+  <div class="container">
+    <div class="reveal from-left">
+      <span class="eyebrow" data-i18n="salon.eyebrow">Le Salon</span>
+      <h2 class="section-title" data-i18n="salon.title">L'atmosphère de la salle</h2>
+      <p class="section-lead" data-i18n="salon.lead">Bois chaud, lumières tamisées et vapeurs des paniers : entrez quelques instants dans notre salle.</p>
+    </div>
+    <div class="salon-grid">
+      <div class="salon-video reveal from-scale">
+        <video autoplay muted loop playsinline preload="auto" poster="assets/img/salle-poster.jpg">
+          <source src="assets/video/video_salle.mp4" type="video/mp4" />
+        </video>
+        <span class="tag" data-i18n="salon.tag1">La salle, en mouvement</span>
+      </div>
+      <div class="salon-tile reveal"><img src="assets/img/plat1.jpg" alt="Nouilles à l'huile pimentée" /><span class="tag" data-i18n="salon.tag2">Le feu vif</span></div>
+      <div class="salon-tile reveal"><img src="assets/img/plat3.jpg" alt="Bol de nouilles fumantes" /><span class="tag" data-i18n="salon.tag3">Le bol fumant</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMMANDER ============ -->
+<section class="section commander" id="commander">
+  <span class="orb orb-gold" style="bottom:-60px;left:8%;width:320px;height:320px"></span>
+  <span class="wm" style="top:8%;right:0">À EMPORTER</span>
+  <div class="container">
+    <div class="reveal from-left">
+      <span class="eyebrow" data-i18n="cmd.eyebrow">Commander</span>
+      <h2 class="section-title" data-i18n="cmd.title">À emporter &amp; en livraison</h2>
+      <p class="section-lead" data-i18n="cmd.lead">Nos raviolis et nouilles voyagent bien — récupérez-les sur place ou faites-vous livrer.</p>
+    </div>
+    <div class="order-grid">
+      <div class="order-card reveal from-scale" data-delay="0">
+        <div class="ico">🥢</div>
+        <h3 data-i18n="cmd.c1title">Click &amp; Collect</h3>
+        <ul>
+          <li data-i18n="cmd.c1li1">Prêt en 15 minutes</li>
+          <li data-i18n="cmd.c1li2">Sans commission</li>
+          <li data-i18n="cmd.c1li3">Paiement sur place ou en ligne</li>
+        </ul>
+        <div class="links">
+          <a href="tel:0177195573" class="btn btn-gold" data-i18n="cmd.c1btn">Commander par téléphone</a>
+        </div>
+      </div>
+      <div class="order-card reveal from-scale" data-delay="140">
+        <div class="ico">🛵</div>
+        <h3 data-i18n="cmd.c2title">Livraison</h3>
+        <ul>
+          <li>Deliveroo · 20–30 min</li>
+          <li>Uber Eats · 20–30 min</li>
+          <li data-i18n="cmd.c2li3">Paris 9e et alentours</li>
+        </ul>
+        <div class="links">
+          <a href="https://deliveroo.fr/fr/menu/paris/9eme-opera/viva-raviolis" target="_blank" rel="noopener" class="btn btn-ghost">Deliveroo</a>
+          <a href="https://order.ody.app/4357d5bd-f49d-494a-af7b-d53e37315086" target="_blank" rel="noopener" class="btn btn-ghost">Click &amp; Collect</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="section faq" id="faq">
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow" data-i18n="faq.eyebrow">Avant de venir</span>
+      <h2 class="section-title" data-i18n="faq.title">Questions fréquentes</h2>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q"><span data-i18n="faq.q1">Faut-il réserver ?</span><span class="pl">+</span></button>
+        <div class="faq-a"><p data-i18n="faq.a1">La réservation est conseillée le soir et le week-end. Appelez-nous au 01 77 19 55 73 — nous vous trouverons une table.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q"><span data-i18n="faq.q2">Quelles sont vos spécialités ?</span><span class="pl">+</span></button>
+        <div class="faq-a"><p data-i18n="faq.a2">Le fait-main : raviolis (饺子, 小笼包, 煎包), nouilles tirées (油泼面, 担担面, nouilles sautées), vermicelles en pot (砂锅粉) et les grands plats du Sichuan.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q"><span data-i18n="faq.q3">Proposez-vous une formule midi ?</span><span class="pl">+</span></button>
+        <div class="faq-a"><p data-i18n="faq.a3">Oui — du lundi au vendredi, de 11h à 15h, nos bols de riz garnis (盖码饭) de 9,90 € à 11,90 €.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q"><span data-i18n="faq.q4">Y a-t-il des plats végétariens ?</span><span class="pl">+</span></button>
+        <div class="faq-a"><p data-i18n="faq.a4">Bien sûr : gyoza végétariens, tofu, légumes sautés, aubergines façon yu-xiang et plus encore sur la carte.</p></div>
+      </div>
+      <div class="faq-item reveal">
+        <button class="faq-q"><span data-i18n="faq.q5">Et le piment ?</span><span class="pl">+</span></button>
+        <div class="faq-a"><p data-i18n="faq.a5">Les spécialités du Sichuan sont signalées 🌶️ sur la carte. On peut adapter le niveau de piquant — n'hésitez pas à demander.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VISITER ============ -->
+<section class="section visiter" id="visiter">
+  <span class="orb orb-wine" style="top:0;left:-100px;width:340px;height:340px"></span>
+  <div class="container">
+    <div class="reveal">
+      <span class="eyebrow" data-i18n="visiter.eyebrow">Visiter</span>
+      <h2 class="section-title" data-i18n="visiter.title">Nous trouver</h2>
+    </div>
+    <div class="visit-grid">
+      <div class="reveal">
+        <div class="info-block"><h4 data-i18n="visiter.l_addr">Adresse</h4><p>57 rue du Faubourg Montmartre<br />75009 Paris</p></div>
+        <div class="info-block"><h4 data-i18n="visiter.l_phone">Téléphone</h4><p><a href="tel:0177195573">01 77 19 55 73</a></p></div>
+        <div class="info-block"><h4 data-i18n="visiter.l_hours">Horaires</h4>
+          <p data-i18n="visiter.hours">Lun – Ven : 11h–15h · 17h30–23h30<br />
+             Sam – Dim : 11h–23h30</p></div>
+        <div class="info-block"><h4 data-i18n="visiter.l_access">Accès</h4><p>Métro Grands Boulevards (L8 · L9) · Le Peletier (L7)</p></div>
+      </div>
+      <div class="map-wrap reveal">
+        <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          src="https://www.google.com/maps?q=57+Rue+du+Faubourg+Montmartre,+75009+Paris&output=embed"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINAL CTA ============ -->
+<section class="final-cta">
+  <span class="orb orb-gold" style="top:-40px;left:10%;width:300px;height:300px"></span>
+  <span class="orb orb-wine" style="bottom:-60px;right:10%;width:360px;height:360px;animation-delay:-5s"></span>
+  <div class="container reveal from-scale">
+    <span class="eyebrow" data-i18n="cta.eyebrow">Dernière invitation</span>
+    <h2 data-i18n="cta.title">Une table vous attend.</h2>
+    <p data-i18n="cta.p">Raviolis pliés à la main, nouilles tirées du jour et feu du Sichuan — sept jours sur sept.</p>
+    <div class="cta-row">
+      <a href="https://reservation.ody.app/4357d5bd-f49d-494a-af7b-d53e37315086" target="_blank" rel="noopener" class="btn btn-gold" data-i18n="cta.btn1">Réserver</a>
+      <a href="menu.html" class="btn btn-ghost" data-i18n="cta.btn2">Voir la carte</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="name">VIVA RAVIOLIS</div>
+        <p style="margin-top:14px" data-i18n="foot.desc">Raviolis &amp; nouilles faits main.<br />Cuisine chinoise &amp; du Sichuan.<br />Paris 9ᵉ.</p>
+      </div>
+      <div>
+        <h5 data-i18n="foot.h_salon">Le Salon</h5>
+        <p>57 rue du Faubourg Montmartre<br />75009 Paris</p>
+        <p><a href="https://www.google.com/maps?q=57+Rue+du+Faubourg+Montmartre,+75009+Paris" target="_blank" rel="noopener" data-i18n="foot.viewmap">Voir sur la carte ↗</a></p>
+      </div>
+      <div>
+        <h5 data-i18n="foot.h_hours">Horaires</h5>
+        <p data-i18n="foot.hours">Lun–Ven 11h–15h · 17h30–23h30<br />Sam–Dim 11h–23h30</p>
+        <p><a href="tel:0177195573">01 77 19 55 73</a></p>
+      </div>
+      <div>
+        <h5 data-i18n="foot.h_nav">Naviguer</h5>
+        <p><a href="#maison" data-i18n="nav.maison">Maison</a><br /><a href="menu.html" data-i18n="nav.carte">La Carte</a><br /><a href="#salon" data-i18n="nav.salon">Le Salon</a><br /><a href="#visiter" data-i18n="nav.visiter">Visiter</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span data-i18n="foot.bottom1">© MMXXVI · Viva Raviolis — Tous droits réservés.</span>
+      <span class="foot-links">
+        <a href="mentions-legales.html" data-i18n="foot.legal">Mentions légales</a>
+        <a href="politique-confidentialite.html" data-i18n="foot.privacy">Politique de confidentialité</a>
+        <span class="foot-powered">Powered by <a href="https://pro.ody.app/" target="_blank" rel="noopener">ody</a></span>
+      </span>
+    </div>
+    <div class="foot-identity">
+      VIVA RAVIOLI — SAS au capital de 3 000 € · SIREN 938 036 977 · SIRET 938 036 977 00016 · RCS Paris · TVA FR02938036977 · 57 rue du Faubourg Montmartre, 75009 Paris
+    </div>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

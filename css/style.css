@@ -83,16 +83,14 @@ h1, h2, h3, h4 { font-family: var(--ff-serif); font-weight: 600; line-height: 1.
   position: fixed; top: 0; left: 0; right: 0; z-index: 100;
   display: flex; align-items: center; justify-content: space-between;
   padding: 16px 40px;
-  background: rgba(28,8,11,.78);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(200,160,75,.12);
-  transition: background .4s var(--ease), padding .4s var(--ease), box-shadow .4s var(--ease);
+  background: #1c080b;
+  border-bottom: 1px solid rgba(200,160,75,.16);
+  box-shadow: 0 6px 24px rgba(0,0,0,.35);
+  transition: padding .4s var(--ease), box-shadow .4s var(--ease);
 }
 .site-header.scrolled {
-  background: rgba(28,8,11,.95);
-  backdrop-filter: blur(14px);
   padding: 11px 40px;
-  box-shadow: 0 10px 40px rgba(0,0,0,.4);
+  box-shadow: 0 10px 40px rgba(0,0,0,.45);
 }
 .brand { display: flex; flex-direction: column; line-height: 1; }
 .brand .cn { font-family: var(--ff-serif); font-size: 1.05rem; color: var(--gold); letter-spacing: .12em; }
